@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LITEDB_TEST.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,21 +15,20 @@ using System.Windows.Shapes;
 
 namespace LITEDB_TEST {
     /// <summary>
-    /// Interaction logic for UpdateUserWindow.xaml
+    /// Interaction logic for AddUserWindow.xaml
     /// </summary>
-    public partial class UpdateUserWindow : Window {
-        private User _user;
+    public partial class AddUserWindow : Window {
+        public User NewUser { get; private set; }
 
-        public UpdateUserWindow(User user) {
+        public AddUserWindow() {
             InitializeComponent();
-            _user = user;
-            NameTextBox.Text = user.Name;
-            AgeTextBox.Text = user.Age.ToString();
         }
 
-        private void UpdateUser(object sender, RoutedEventArgs e) {
-            _user.Name = NameTextBox.Text;
-            _user.Age = int.Parse(AgeTextBox.Text);
+        private void SaveUser(object sender, RoutedEventArgs e) {
+            NewUser = new User {
+                Name = NameTextBox.Text,
+                Age = int.Parse(AgeTextBox.Text)
+            };
             DialogResult = true;
             Close();
         }

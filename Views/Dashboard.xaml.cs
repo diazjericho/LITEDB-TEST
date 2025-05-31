@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LITEDB_TEST.Data.Database;
+using LITEDB_TEST.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;

@@ -1,4 +1,5 @@
 ﻿using LiteDB;
+using LITEDB_TEST.Data.Models;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
@@ -11,8 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LITEDB_TEST
-{
+namespace LITEDB_TEST {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

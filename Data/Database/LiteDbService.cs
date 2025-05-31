@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LITEDB_TEST {
+namespace LITEDB_TEST.Data.Database {
     using LiteDB;
+    using LITEDB_TEST.Data.Models;
 
     public class LiteDbService {
         public void InsertUser(User user) {

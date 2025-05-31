@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LITEDB_TEST {
+namespace LITEDB_TEST.Data.Models {
     public class User {
         public int Id { get; set; }
         public string Name { get; set; }
